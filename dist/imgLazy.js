@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, []);
         
         if (!lazyImages.length) {
+          // 위의 작업을 반복하여 모든 이미지가 삭제되었다면 이벤트 제거
           document.removeEventListener("scroll", lazyLoad);
         } else active = false;
       }, 500);
