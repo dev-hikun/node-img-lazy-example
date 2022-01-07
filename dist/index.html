@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image lazy load example</title>
+    <script src="./imgLazy.js"></script>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      .card-wrap li {
+        height: 500px;
+        margin-bottom: 100px;
+        text-align: center;
+      }
+      .card-wrap img{
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="card-wrap">
+      <li><img class="lazy" data-src="./img/1.jpeg" src="./img/blur.jpeg" /></li>
+      <li><img class="lazy" data-src="./img/2.jpeg" src="./img/blur.jpeg" /></li>
+      <li><img class="lazy" data-src="./img/3.jpeg" src="./img/blur.jpeg" /></li>
+      <li><img class="lazy" data-src="./img/4.jpeg" src="./img/blur.jpeg" /></li>
+      <li><img class="lazy" data-src="./img/5.jpeg" src="./img/blur.jpeg" /></li>
+    </ul>
+  </body>
+</html>
